@@ -1,27 +1,47 @@
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Mi Blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog Tecnológico</title>
+    <style>
+        /* Este bloque hace que el texto se vea bien separado y legible */
+        body {
+            background-color: #1a1a1a; /* Fondo oscuro para que no canse la vista */
+            color: #e0e0e0;            /* Letras claras */
+            font-family: 'Courier New', Courier, monospace; /* Estilo técnico */
+            padding: 5% 10%;
+            line-height: 1.6;          /* SEPARACIÓN DE LÍNEAS */
+        }
+        pre {
+            white-space: pre-wrap;     /* Respeta tus "Enters" y salta de línea solo */
+            word-wrap: break-word;     /* No deja que el texto se salga de la pantalla */
+        }
+        h1 { color: #00ff00; border-bottom: 1px solid #00ff00; }
+    </style>
 </head>
 <body>
 
-<h1>Mi Blog</h1>
+<h1>MIS APUNTES TÉCNICOS</h1>
 
-<p>  Wikipedia offline
+<pre>
+
+  Wikipedia offline
 
 puedes tener la Wikipedia estando sin internet pero tienes que bajar este archivo que pesa 111 gigas (en inglés) e instalar el programita que abre la Wikipedia que se llama kiwix
 https://ftp.fau.de/kiwix/zim/wikipedia/wikipedia_en_all_maxi_2025-08.zim
 Wikipedia offline 
 https://ftp.fau.de/kiwix/zim/wikipedia/?C=S;O=D
-++++++++++++
+****************
 mis navegadores favoritos en Android
 
  Iceraven me permite instalar muchas más extensiones que Firefox y carga earth lo q otros no
 Y para usar el teléfono como un ordenador en modo horizontal con ratón el mejor navegador es Vivaldi , pues te permite dimensionar el texto y sincronizar datos con otros teléfonos
  pon tu pantalla en horizontal en Android con la aplicación de Android: control screen orientation 
 Y traduce offline:  https://support.mozilla.org/es/kb/android-translation?as=u&utm_source=inproduct#w_how-to-use-the-translation-toolbar
-+++++++++++++
+****************+
 producción musical
 
  
@@ -42,13 +62,13 @@ https://www.mediafire.com/file/o1idjjqjwg58o6b/com.midisheetmusic_2.6.7.apk/file
 ejemplo de cancion creada
 https://www.mediafire.com/file/5jgsu59f4dsh9a2/Record-1.m4a/file
 
-+++++++++++++++++
+****************+++++
 YouTube alternativo y prg bici rutas
 
  https://inv.nadeko.net/feed/popular
 Geovelo programa Android sin publicidad te localiza rutas llanas 
 
-+++++++++++++
+****************+
 carga eléctrica y otg
 
  con estos dispositivos he conseguido cargar un teléfono móvil y que tenga función OTG también al mismo tiempo ,en un teléfono honor 10,modelo COL-L29, cpu kirin 970
@@ -86,7 +106,7 @@ En resumen:
 La diferencia radica en las capacidades inherentes de hardware y la implementación de software (kernel de Android y controladores USB) que cada fabricante decide incluir en sus dispositivos. Los teléfonos de gama más alta, como tu Honor 10 en su momento, suelen tener la circuitería y el soporte para estándares como USB PD que permiten funcionalidades más avanzadas como la carga simultánea con OTG. Los modelos más económicos, como el Redmi 10C, a menudo omiten estas características para reducir costes.
 No es un fallo del Redmi 10C, sino una limitación en su diseño y especificaciones para ese rango de precios.
 
-++++++++++++
+****************
 eficiencia energética con el teléfono
 
  -he conseguido ser totalmente autosuficiente con una placa solar y una batería portátil de litio usó 1 teléfono en modo horizontal con un ratón Bluetooth como si fueran un ordenador y la eficiencia con la placa y la batería son excepcionales
@@ -108,13 +128,13 @@ https://amzn.eu/d/eENBQcQ
 ////////
 También puedes usar el navegador lemur que te permite instalar extensiones de Chrome y de Edge y que te carga todas las páginas sin ningún tipo de restricción si es que con los anteriores navegadores tienes alguna limitación, he instalado las extensiones dark reader, all about cookies, adblock youtube
 
-+++++++
+********+
 clonar disco duro
 
  he clonado un disco duro mecánico de 75 GB en otro SSDe de 119 GB primero localizando los parámetros con, blkid y después con:
 dd if=/dev/sda of=/dev/sdb status=progress
 
-+++++++++++++
+****************+
 la mejor instalación para PC
 
 -en pc moderno instalar ventoy y después un Linux en partición extra elegir desde bios para arrancar uno u otro y si el pc no lo admite pasar a estas otras opciones:
@@ -131,7 +151,7 @@ de esta manera podemos tener en un disco duro interno tanto ventoy para arrancar
 -----
 otra opción interesante es hacer una instalación de tu Linux con cubic con tus preferencias y las salvas a un ISO propio tuyo, y óperas con inteligencia artificial online pues la offline no funciona
 
-++++++++++++
+****************
 añadir ventoy a grub2
 
  https://github.com/BWGosselin/Ventoy_GRUB_Entry
@@ -248,14 +268,14 @@ https://github.com/nomic-ai/gpt4all
 y ejecutar en linux con:
 /home/user/chatgpt4all/bin/chat
 
-+++++++++++++
+****************+
 ventoy e instalación de Linux completa
 
  he conseguido instalar en un disco duro interno SSD ,ventoy y en otra partición creada he instalado MX Linux 21 instalación completa en una partición ext4 y he creado otra 550 megas FAT32 boot/EFI que sirve de arranque para UEFI, y arrancan tanto ventoy como MX Linux. con lo cual ahora es posible tener inteligencia artificial offline en el Linux de instalación completa
 para arrancar en un ordenador asus tecleo f2 y accediendo a la BIOS puedo arrancar en ventoy o en el Linux instalado.
 para instalar ventoy en un disco duro interno hay que ir a la opción de ver todos los dispositivos para instalarlo a continuación
 
-+++++++++
+********+++
 aplicaciones portátiles por categorías
 
  https://portable-linux-apps.github.io/apps
@@ -263,21 +283,21 @@ aplicaciones portátiles por categorías
 https://search.nixos.org/packages
 en nixos instalas programas de forma temporal con: nix-shell -p app
 y te olvidas de problemas de dependencias al probar  programas si los desinstalas en debian y derivadas
-+++++++++++++
+****************+
 
 persistencia ventoy en hd,antix23
 
  he conseguido persistencia con ventoy en disco duro interno con antix 23 en una partición ext4 secundaria, en ese mismo disco duro instalado con ventoy,  desde los menús de la pantalla principal al arrancar antix.
 pero estoy teniendo dificultades para instalar mistral inteligencia artificial que tiene un archivo de 4,1 gigas.
 es fantástico así puedo arrancar infinidad de distribuciones en modo live además
-+++++++
+********+
 
 fydeos 3 en 1
 
  el sistema operativo ideal sería fydeos pues se compone de un debian, un Android, y un navegador independiente chromium. 
 como el sistema operativo debian se tiende a corromper al desinstalar programas que probamos y no nos sirven, podemos instalar el sistema de paquetería nix que nos permite probar programas sin que se instalen con el comando nixos-shell -p app, o instalarlo normalmente y desinstalarlo pues no hay los problemas de dependencia que con los demás Linux pues cada programa ocupa su carpeta.
 
-++++++++++++
+****************
 
 aplicaciones en nixos selección
 
@@ -285,7 +305,7 @@ aplicaciones en nixos selección
 Jacinth Samuel
 https://m.youtube.com/watch?v=sRWpIRU8cXU&pp=ygUYdGhlIGFwcHMgaSB1c2UgZnQuIG5peG9z
 
-++++++++++
+********++++
 nix en Debian 
 
  
@@ -295,7 +315,7 @@ Ruben_&_Linux:~
 nix el lenguaje de programación y gestor de paquetes 
 https://youtu.be/msqdrdtiSOY?si=oqe4aH71j5o5iEoU
 
-+++++++++++++
+****************+
 
 Mistral la inteligencia artificial en PC instalación
 
@@ -323,7 +343,7 @@ https://markodenic.com/install-mistral-ai-on-linux/
 curl -fsSL https://ollama.com/install.sh | sh          
 ollama run mistral
 
-+++++++++++++++
+****************+++
 
 otras instalaciones de inteligencia artificial
 
@@ -359,7 +379,7 @@ Método 3: Usar LM Studio (Para Windows/Mac, fácil de usar)
 Para modelos ligeros (Mistral 7B, GPT4All), una PC con 16GB RAM es suficiente. Para modelos más grandes como LLaMA 2 13B, se recomienda 32GB RAM o más.
 Si buscas un ChatGPT offline sin complicaciones, prueba GPT4All o LM Studio. Si eres más técnico, Ollama o LLaMA pueden ser mejores opciones.
 
-+++++++++
+********+++
 
 inteligencia artificial francesa Mistral en PC instalación
 
@@ -378,7 +398,7 @@ ollama run mistral:7b-instruct
 verifica instalación con 
 ollama list
 
-++++++++
+********++
 la IA de China instalación en Android
 
 
@@ -415,13 +435,13 @@ CD ollama
 -------
 si bien hace buenos razonamientos hay que complementar información de base de datos poniendo en tu teléfono la Wikipedia offline llamada kiwix
 
-++++++++++++
+****************
 la IA China empecé
 
  deepseek, eso es una inteligencia artificial China muy interesante se instala fácilmente en Android.
 para pc y offline:
 https://computerhoy.20minutos.es/tutoriales/como-instalar-deepseek-windows-mac-linux-funcione-incluso-conexion-internet-1439040
-++++++±+++
+********±+++
 
 Linux muy interesantes
 
@@ -455,7 +475,7 @@ https://codemonkeymike.medium.com
 -----
 https://www.ventoy.net/en/distro_iso/nixos.html
 
-++++++++
+********++
 otras instalaciones de Linux en PC además de instalaciones completas
 
  
@@ -467,7 +487,7 @@ https://distro.ibiblio.org/easyos/amd64/releases/buster/2.6.2/
 También se puede usar un pendrive USB con ventoy y múltiples distribuciones que tienen la ventaja que al arrancar desde USB en vez de desde disco duro interno con ventoy ,arrancan todas las distribuciones cosa que no sucede con el ventoy en disco duro interno.
   además puedes usarlo en cualquier ordenador
 
-+++++++++
+********+++
  instalaciones de en Puppy Linux en pc
 
  https://m.youtube.com/watch?v=Dyp0UG3HfLY
@@ -482,7 +502,7 @@ part I was in legacy bios, this is part II using UEFI bios. Here as before SD is
 if valid answer is UEFI 1. gparted SD card HD - Persistence partition (SAV) 2. frugalpup installer SD card: install BW64 files 3. grub setup 4. check persistence: HD folder save download the latest BookwormPup64_nkb.iso v.2 here:
 https://www.mediafire.com/file/tvcmyx5u9et2ckp/BookwormPup64_10.0.9_nkb_v2.iso/file
 
-++++++++
+********++
 
 portátil Thomson la instalación liviana
 
@@ -507,7 +527,7 @@ https://www.mediafire.com/file/7p15pyg503bb2dz/friendly-jammy32-rc2-uefi.iso/fil
 Y un Windows en modo live: 
 https://www.mediafire.com/file/67qqsq68x71x6be/Hikari_PE_X64_V8.50_EN.iso/file
 
-++++++++++
+********++++
 
 consejos técnicos
 
@@ -567,7 +587,7 @@ y nos dice de crear punto de acceso,ok,
 ------------
 se puede navegar en un Android muy antiguo con Firefox 55
 
-++++++++++
+********++++
 
 instalación múltiple de Puppy Linux
 
@@ -650,7 +670,7 @@ https://www.crx4chrome.com/crx/53529/
 Coge sonido en Medion pero no hace ni se instala en frugal varios puppy:
 upup-20.04-jrb-e1.iso
 https://archive.org/details/Puppy_Linux_JammyPup
-+++++++++++++
+****************+
 laptop de dos GB de RAM mejor instalación
 
  
@@ -698,7 +718,7 @@ linux (loop)/boot/syslinux/vmlinuz from=$isofile noapic
 initrd (loop)/boot/syslinux/initrd.xz
 }
 
-+++++++++++
+********+++++
 
 antix y otros instalaciónes varias
 
@@ -744,7 +764,7 @@ linux (loop)/boot/syslinux/vmlinuz from=$isofile noapic
 initrd (loop)/boot/syslinux/initrd.xz
 }
 
-++++++++++
+********++++
 
 persistencia en ventoy
 
@@ -772,7 +792,7 @@ Persistencia antix cuando no hay menú de persistencia en la pantalla inicial co
 
 4- al arrancar de nuevo pongo persist=static como en apartado 2
 
-+++++++++
+********+++
 mejores Linux en mi pc
 
 esta es la configuración ideal para mí para tener en mi portátil infinidad de sistemas operativos: Instaló en el disco duro SSD interno ventoy (también puede ser en un pendrive USB) con múltiples isos de Linux y Windows live , destacando estos que pongo a continuación por tener características persistente. así mismo uso Windows full instalación arrancando desde una SD Windows 11, que instalé con rufus los archivos de persistencia pueden guardarse para restaurar en cualquier otro equipo tu configuración de Linux
@@ -796,7 +816,7 @@ https://distro.ibiblio.org/easyos/amd64/releases/buster/2.6.2/easy-2.6.2-amd64.i
 antix22base,163,dillo,seamonkey,barrabrillo,
 opc. persistencia,arranca en lector sd con plokexec,se instala en sd con usb installer del antix***
 
-++++++++++++
+****************
 antes persistencia en lector de SD interno en mi portátil
 
 
@@ -811,7 +831,7 @@ Antix persistent en lector SD interno
 3- me pedira establecer passwords la 1 vez,y cantidades en megas para root y home
 
 4- al arrancar de nuevo pongo persist=static como en apartado 1, para tener persistencia o nada si quiero arrancar sin persistencia.
-++++++++++
+********++++
 
 persistencia en ventoy 
 
@@ -856,7 +876,7 @@ sudo apt install ./netsurf-common_3.6-3.2_all.deb
 sudo apt install ./netsurf-gtk_3.6-3.2_amd64.deb
 sudo apt install ./netsurf_3.6-3.2_all.deb
 
-+++++++++++
+********+++++
 repositorio local en Debian
 
  Como usar imagens ISO do Debian como repositórios locais do mesmo
@@ -909,7 +929,7 @@ umount /mnt/m8/
 Para usar novamente as imagens como repositórios locais, basta montá-las novamente e usá-las.
 E aqui termina este tutorial, se tiverem alguma dúvida sobre o mesmo, deixem comentários.
 
-++++++
+********
 eficiencia en portátil
 
  El sistema operativo y el navegador más ligeros para un ordenador x64 es bionicpup 64 y el navegador slimjet versión portable appimage contenido en esta dirección web,,,,
@@ -920,7 +940,7 @@ https://www.mediafire.com/file/ngq72b0irhl3onq/Slimjet-portable32.tar.gz/file
 ---------------------
 con el navegador Iron consume algo menos de ram que Slimjet lo tienes aqui:
 https://www.mediafire.com/file/9aedkdc8ihvdb2m/Iron-portable32.tar.gz/file
-++++++++++
+********++++
 
 consejos útiles 
 
@@ -1007,7 +1027,7 @@ https://wikka.puppylinux.com/PuppyStudio?fbclid=IwZXh0bgNhZW0CMTEAAR0N87at878rX8
 Con esto puedes salvar una web en tu dispositivo
 Cyotek webcopy,, copia Page web
 
-+++++++++++
+********+++++
 sistema operativo y clonación
 
  Sistema operativo y clonación,,
@@ -1015,13 +1035,13 @@ Lo mejor es tener un sistema operativo en pendrive que la imagen ISO no ocupe m�
   https://www.mediafire.com/file/0trh3nwaozzdi6f/ampliar_particion_despues_de_clonezilla.zip/file 
  https://www.mediafire.com/file/2sjzd4676k9846z/clona_sd.zip/file
 
-++++++++
+********++
 Linux ideal en Celeron básico
 
  Con sparky Linux versión 6.5 minimal guy derivada de debian consigo bajo consumo de RAM y reconocimiento de todo el hardware.
 Tambien va muy bien antix 19 x86 arrancando el navegador brave, arrancando desde un llave USB con ventoy
 
-+++++++++
+********+++
 4 increibles linux para laptop 2 gigas ram cpu z8350
 
 
@@ -1045,7 +1065,7 @@ He podido hacer instalación completa de esta versión de 32 bits Focalpup32 y c
 Arrancando la versión de fossapup64 bits y eligiendo la imagen ISO de la de 32, pues la versión de 64 bits no arrancaba después de la instalación completa
 https://www.forum.puppylinux.com/viewtopic.php?p=128#p128
 
-+++++++++
+********+++
 
 pasando información de teléfono a teléfono
 
@@ -1055,55 +1075,55 @@ pasando información de teléfono a teléfono
 -en el móvil emisor se elige el file a enviar con Total Commander
  y nos dice de crear punto de acceso,ok,
  -Y nos pone a escanear un código con el móvil receptor
-++++++
+********
 
 Linux en pc de un giga
 
 
 estoy usando un pc muy antiguo con 1 giga de ram con antix 17 i386 con smtube y vlc para YouTube y va como un tiro , para YouTube también va muy bien si instalas minitube. tengo un laptop de hace 15 anos 2 de ram y cpu centrino 1.6 y le he instalado debian 11, 32 bits y va de lujo
 
-+++++++
+********+
 extensiones para dividir pantalla
 
 https://addons.mozilla.org/en-GB/firefox/addon/open-link-in-sidebar/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
 https://chrome.google.com/webstore/detail/dualless-for-google-chrom/maopdonemnbfjkmeghbllmkepkoccadf?hl=en
-++++++++++
+********++++
 instalación de easy linux de barry Kauler 
 
 
  copy easyos a sd : dd if=easy.img of=/dev/sdc bs=1M
 
-+++++++
+********+
 con esta aplicación puedes acceder al móvil desde el PC
 
  https://f-droid.org/packages/com.carriez.flutter_hbb/
 
-++++++++++
+********++++
 Windows en pendrive instalación completa
 
  acabo de probar este windows y va de lujo lo he instalado con rufus en un pendrive,  
 el iso lo baje de youtube buscando por phoenix windows pesa 1.5 gigas,, Phoenix LiteOS 10 Pro Gamer (19044.1415) By FBConan.iso
 windows a usbstick con rufus,,opciones de imagen-windows togo---esquema de particion-mbr---sist de destino-bios(o uefi-csm---nombre de volumen-windows---sistema de archivos-ntfs4096bytes
 
-++++++++++
+********++++
 
 copiar texto sin salir del programa
 
  Puedes copiar enlaces o texto sin salir de un programa por ejemplo de facebook para no perder el hilo con notes de keep de Google keep
-++++++
+********
 
 otro buen Linux
 
  upup-20.04-jrb-e1.iso  el linux ideal va en ryzen 5, lenovo t440 , con scrcpy,yt-dl y pesa 500k,increible funcióna todo
 
-++++++++++
+********++++
 
 Linux pendrive con persistencia y ligero
 
  He instalado q4os la imagen ISO pesa un giga solamente, con rufus dando un giga de persistencia y va muy ligero la última versión,
 También he instalado sparky Linux en otro pendrive con rufus va muy bien la imagen pesa 1,8 GB
 También arranca desde el lector interno de SD del portátil con la utilidad plotexec
-++++++++++
+********++++
 
 otro linux super 
 
@@ -1113,7 +1133,7 @@ https://archive.org/download/Puppy_Linux_JammyPup/upup-22.04-jrb-E1.iso
 https://archive.org/details/Puppy_Linux_JammyPup
 --------------
 Lo instaló en pendrive con la utilidad que trae el mismo sistema operativo llamada USB installer o stick installer y además crea un archivo de persistencia muy eficaz
-+++++++++
+********+++
 gestor de descargas en Android
 
  ária2PC
@@ -1126,14 +1146,14 @@ también van los navegadores styx y meta browser como pc en horizontal 
 El mejor navegador para usar el teléfono como un ordenador es Vivaldi, pues te permite dimensionar el texto y los menús y sincronizar datos
 con control screen rotation establecemos visión horizontal
 
-++++++++++
+********++++
 tener Windows y Pupi Linux en un PC fácil
 
  la mejor opción para tener un Linux junto a Windows es instalar en windows Lick de Puppy Linux y después arrancar el Lick e instalar Bionicpup de Puppy linux u otro puppy linux ,te saldrá un arranque dual al arrancar el ordenador
 
-++++++++++
+********++++
 con simple note puedes compartir información notas en tu teléfono y PC
-+++++++++
+********+++
 
 Linux en tu teléfono
 
@@ -1141,7 +1161,7 @@ Linux en tu teléfono
  La youtuber Ruth Ake explica muy bien cómo instalar userland un Linux para Android
 https://www.mediafire.com/file/bxdbc8xvw0pfl7h/userland.zip/file
 
-++++++++++++
+****************
 tu teléfono más rápido
 
  Con esto el teléfono va más rápido,,,ahorro de batería
@@ -1151,16 +1171,16 @@ opciones de desarrollo, aplicaciones, aplicaciones en espera (apagar las activas
 ajustes, ubicación, mejorar la precisión, apagar por wifi y bluetooth
 en playstore desactivas protect
 
-++++++++++
+********++++
 descargar vídeos de Youtube sin sonido
 
  youtube-dl -F url disponibles,,,youtube-dl -f 136 url sin sound,,,140 only audio,,,135,136,17 vid only
-+++++++++++
+********+++++
 
 subtítulos de YouTube a tu idioma
 
  traduce subtítulos En tiempo real de YouTube con,, https://chromewebstore.google.com/detail/subt%C3%ADtulos-dobles-de-yout/hkbdddpiemdeibjoknnofflfgbgnebcm
-++++++++
+********++
 linux persistentes con la aplicación vysor
 
 Mirroring phone android on desktop pc with stick usb with consum of ram less than 200k:
@@ -1180,7 +1200,7 @@ other more is antix21-64b with persistenceinstalling with usb-install of own ant
 
 One stick usb for use with very much computers in your pocket
 
-++++++++++++
+****************
 otros Linux con instalación persistente y la aplicación vysor
 
 Imagine that you have to access a foreign computer with a USB stick with your operating system and your favorite programs, because that is what I intend with this list or
@@ -1200,40 +1220,40 @@ solution is use fossaup with MSEdge-portable64.tar, and vysor over edge for mirr
 
 other more is antix21-64b with persistenceinstalling with usb-install of own antix and installing scrcpy,adb,ffmpeg
 
-+++++++++
+********+++
 vídeo hablado a texto
 
  Con esta aplicación te saca el texto de un audio en inglés sin límite de tiempo eligiendo inglés americano, la transcripción es muy buena
 Es dejando el audio en  segundo plano sonando con el programa pulsar
 https://apkcombo.com/pt/live-transcribe-notification/com.google.audio.hearing.visualization.accessibility.scribe/
-++++++++
+********++
 manejo mi móvil en PC
 
  he descubierto como manejar el movil desde el pc de forma inalambica y con el raton del pc : ScreenOnPCViewer_8.3--x86_64.appimage
 
-+++++++++
+********+++
 
 bajando vídeos rápidamente
 
  con xtreme download manager te descargas de internet con mayor rapidez todo y elude las limitaciones que pone youtube
 
-++++++
+********
 
 variar brillo en PC
 
  xrandr --output eDP --brightness 2
 Varía brillo en Linux
-+++++++
+********+
 con este adaptador sacamos vídeo de celular a televisión
  Con este adaptador sacamos cualquier teléfono a TV
 https://m.youtube.com/watch?v=dAPtZUa5VOs
-+++++++
+********+
 ranking de CPUs de teléfonos
 
  Ranking de procesadores de teléfono
 https://unite4buy.com/es/cpu/mobile-processors-ranking/
 
-+++++++
+********+
 bajar listas enteras de YouTube
 
  apt update
@@ -1252,7 +1272,7 @@ https://tubemate.br.uptodown.com/android
 ++++
 
 
-++++++++++
+********++++
 
 pasar datos de tu teléfono al PC
 
@@ -1263,7 +1283,7 @@ y el nombre del phone
 en el explorador files del pc 
 en redmi 7 -configuracion>conexion y compartir>punto de acceso movil
 
-+++++++++
+********+++
 televisión en tu teléfono 
 
  Con esto tenemos canales de televisión con la aplicación de Android :IPTV smart player.apk
@@ -1272,11 +1292,11 @@ https://iptvlinks.es/download/playlist-peliculas-latino/
 importar la URL
 IPTV Smart Player
 
-++++++++
+********++
 pantalla completa en el navegador Vivaldi en el teléfono
  En navegador Vivaldi se consigue pantalla completa total con activar el gesto de deslizamiento en la barra de direcciones y en visibilidad de la barra de estado poner ocultar barra de estado
 
-++++++++
+********++
 
 transferir información entre teléfonos
 
@@ -1290,43 +1310,37 @@ aplicación wifi total Commander: 
 https://wifi-wlan-plugin-for-totalcmd.apk.dog/
 la aplicación total Commander archivos:
 https://total-commander.br.uptodown.com/android/download/1019108123
-+++++++
+********+
 
 traduce vídeos de YouTube automáticamente
 
  traduce youtube al español. extension
 https://chrome.google.com/webstore/detail/speak-subtitles-for-youtu/fjoiihoancoimepbgfcmopaciegpigpa
 
-+++++++
+********+
 Windows Live en pendrive
  Para tener Windows en un pendrive en modo live copia este iso en ventoy,,    
 hikari pe v9.0
 --------------
-+++++++++
+********+++
 
 Windows instalación completa en pendrive
 
  Puedes tener un Windows con persistencia en un pendrive con esta configuración,,,
 windows a usbstick con rufus,,opciones de imagen-windows togo---esquema de particion-mbr---sist de destino-bios(o uefi-csm---nombre de volumen-windows---sistema de archivos-ntfs4096bytes
-+++++++++++
+********+++++
 
 traduce subtítulos a tu idioma en Youtube
 
  Con esta extensión puedes traducir subtítulos de un vídeo de YouTube a tu idioma
 https://chromewebstore.google.com/detail/subt%C3%ADtulos-dobles-de-yout/hkbdddpiemdeibjoknnofflfgbgnebcm
 
-+++++++
+********+
 otro navegador útil en Android
 
  El navegador lemur para Android soporta complementos de Chrome y edge
 
-
-
-
-
-
-
-</p>
+</pre>
 
 </body>
 </html>
